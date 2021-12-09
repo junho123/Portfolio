@@ -1,5 +1,4 @@
 /* Global */
-
 :root {
   /* Color */
   --color-white: #ffffff;
@@ -188,7 +187,7 @@ p {
 .about__majors {
   display: flex;
   justify-content: space-between;
-  margin: 80px 150px;
+  margin: 80px 0px;
 }
 
 .major__icon {
@@ -369,7 +368,7 @@ p {
 }
 
 .project__description h3 {
-  color: var(--color-white);
+  color: var(--color-orange);
 }
 
 .project__description h3:after {
@@ -377,10 +376,10 @@ p {
   display: block;
   position: relative;
   left: 50%;
-  width: 25px;
+  width: 50px;
   height: 2px;
+  transform: translateX(-50%);
   background-color: var(--color-dark-white);
-  margin-left: -12px;
   margin-top: 8px;
 }
 
@@ -440,6 +439,11 @@ p {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
+    background-color: var(--color-pink);
+  }
+
+  #navbar.navbar--dark {
+    padding: 16px;
   }
 
   .navbar__menu {
@@ -447,6 +451,10 @@ p {
     text-align: center;
     width: 100%;
     display: none;
+  }
+
+  .navbar__menu.open {
+    display: block;
   }
 
   .about__majors {
